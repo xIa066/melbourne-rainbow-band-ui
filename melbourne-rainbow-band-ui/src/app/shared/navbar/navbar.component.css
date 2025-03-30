@@ -3,7 +3,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 2rem;
+  padding: 1rem;
   z-index: 1000;
   background-color: transparent;
   transition: background-color 0.4s ease;
@@ -63,4 +63,20 @@
 .social-icon a:hover {
   color: #ffdd57;
   transform: scale(1.2);
+}
+
+/* Ensure icons are aligned and styled like text */
+fa-icon {
+  vertical-align: middle;
+}
+
+/* Larger icon size and hover scale effect for interactivity */
+.nav-link fa-icon {
+  font-size: 1.3rem;
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover fa-icon {
+  transform: scale(1.2);
+  color: #ffdd57;
 }

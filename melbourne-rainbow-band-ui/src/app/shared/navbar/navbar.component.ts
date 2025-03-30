@@ -1,14 +1,23 @@
 import { AfterViewInit, Component, HostListener } from '@angular/core';
 import gsap from 'gsap';
+import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 
 @Component({
   standalone:true,
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.css']
+  styleUrls: ['./navbar.component.css'],
+  imports: [FontAwesomeModule],
 })
 export class NavbarComponent implements AfterViewInit {
   isScrolled = false;
+
+  constructor(library: FaIconLibrary) {
+    library.addIcons(faFacebook, faInstagram);
+  }
+
   @HostListener('window:scroll', [])
   onWindowScroll() {
     this.isScrolled = window.scrollY > 50;
