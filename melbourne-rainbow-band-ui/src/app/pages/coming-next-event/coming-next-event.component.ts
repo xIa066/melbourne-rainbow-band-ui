@@ -7,11 +7,10 @@ import { ComingNextEventService } from '../../core/coming-next-event.service';
 gsap.registerPlugin(ScrollTrigger);
 
 @Component({
-  selector: 'app-coming-next-event',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './coming-next-event.component.html',
-  styleUrls: ['./coming-next-event.component.css'],
+    selector: 'app-coming-next-event',
+    imports: [CommonModule],
+    templateUrl: './coming-next-event.component.html',
+    styleUrls: ['./coming-next-event.component.css']
 })
 export class ComingNextEventComponent implements AfterViewInit {
   private eventService = inject(ComingNextEventService);

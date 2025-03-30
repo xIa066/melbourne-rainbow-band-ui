@@ -6,10 +6,9 @@ import { CommonModule } from '@angular/common';
 
 
 @Component({
-  standalone:true,
-  selector: 'app-posts',
-  templateUrl: './posts.component.html',
-  imports: [MatCardModule, RouterModule, CommonModule]
+    selector: 'app-posts',
+    templateUrl: './posts.component.html',
+    imports: [MatCardModule, RouterModule, CommonModule]
 })
 export class PostsComponent implements OnInit {
   posts: any[] = [];

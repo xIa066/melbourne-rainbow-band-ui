@@ -8,11 +8,10 @@ import { ComingNextEventComponent } from "../coming-next-event/coming-next-event
 gsap.registerPlugin(ScrollTrigger);
 
 @Component({
-  selector: 'app-home',
-  standalone: true,
-  imports: [NgOptimizedImage, NavbarComponent, ComingNextEventComponent],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+    selector: 'app-home',
+    imports: [NgOptimizedImage, NavbarComponent, ComingNextEventComponent],
+    templateUrl: './home.component.html',
+    styleUrl: './home.component.css'
 })
 export class HomeComponent implements AfterViewInit {
   ngAfterViewInit(): void {
