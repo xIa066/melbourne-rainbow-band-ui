@@ -1,0 +1,66 @@
+/* === Navbar Container === */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 2rem;
+  z-index: 1000;
+  background-color: transparent;
+  transition: background-color 0.4s ease;
+}
+
+/* Scrolled Navbar State (Rainbow Background) */
+.navbar.scrolled {
+  background: linear-gradient(
+    to right,
+    #d32f2f, /* red */
+    #f57c00, /* orange */
+    #fbc02d, /* yellow */
+    #388e3c, /* green */
+    #1976d2, /* blue */
+    #7b1fa2  /* purple */
+  );
+}
+
+/* === Navigation Links Container === */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* for animation overflow */
+}
+
+/* Individual Navigation Links (for animation) */
+.nav-link {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  display: inline-block; /* Critical for GSAP animation */
+  transition: color 0.3s ease;
+}
+
+/* Hover Effect on Links */
+.nav-link:hover {
+  color: #ffdd57;
+  text-decoration: underline;
+}
+
+/* Social Media Icon Links */
+.social-icon a {
+  font-size: 1.3rem;
+  color: #ffffff;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon a:hover {
+  color: #ffdd57;
+  transform: scale(1.2);
+}

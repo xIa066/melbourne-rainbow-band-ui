@@ -1,0 +1,79 @@
+/* Hero Section & Parallax */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.parallax-container {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.background-image {
+  width: 100%;
+  height: 120%; /* Extra height for parallax effect */
+  object-fit: cover;
+}
+
+/* Navbar styling (position clearly fixed at top) */
+app-navbar {
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 100%;
+  z-index: 10;
+}
+
+/* Coming Next Section Container */
+.coming-next-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  width: 100%;
+  margin-bottom: 40px;
+  overflow: visible;
+}
+
+/* Rainbow Music Lines (background effect) */
+.rainbow-music-lines {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  padding: 0 20px;
+  z-index: 1;
+}
+
+.line {
+  width: 100%;
+  height: 5px;
+  border-radius: 3px;
+}
+
+/* Rainbow Color Definitions (Clearly identified) */
+.red    { background-color: #E40303; }
+.orange { background-color: #FF8C00; }
+.yellow { background-color: #FFED00; }
+.green  { background-color: #008026; }
+.blue   { background-color: #004DFF; }
+
+/* Coming Next Text Overlay (Foreground) */
+.coming-next-text {
+  position: relative;
+  z-index: 2;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(4px);
+  text-shadow: 0 3px 6px rgba(255, 255, 255, 0.7);
+}

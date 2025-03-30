@@ -1,0 +1,14 @@
+<section id="coming-next-event">
+  <div #poster class="poster" *ngIf="posterUrl">
+    <img [src]="posterUrl" alt="Next Event Poster">
+  </div>
+
+  <div #stepsContainer class="steps">
+    @for (step of steps; track step) {
+      <div class="step">
+        <!-- <h3>{{ step.title }}</h3> -->
+        <p>{{ step.content }}</p>
+      </div>
+    }
+  </div>
+</section>
