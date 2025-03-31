@@ -1,6 +1,6 @@
 [build]
   command = "ng build --configuration production"
-  publish = "dist"
+  publish = "dist/browser"
 
 [build.environment]
   NODE_VERSION = "20" # Or a recent version
